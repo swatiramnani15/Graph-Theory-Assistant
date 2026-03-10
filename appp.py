@@ -651,9 +651,7 @@ Upload a graph directly and let the assistant do the heavy lifting — identifyi
         <p class="author-name">Swati G Ramnani</p>
         <p class="author-institution">St. Xavier's College, Ahmedabad</p>
         <p class="author-bio">
-          Passionate about mathematics and intelligent systems, Swati built the 
-          Graph Theory Assistant to make one of computer science's most elegant 
-          disciplines accessible to every curious mind.
+          With a deep passion for Mathematics, Swati built the Graph Theory Assistant to transform one of mathematics's most elegant disciplines into something every curious mind can explore and enjoy.
         </p>
       </div>
     </div>
