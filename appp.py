@@ -411,6 +411,79 @@ border: 1px solid #6ee7b7;
 animation: pulse-ring 2.5s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
 }
 
+/* ── Author ── */
+.author-section {
+    border-top: 1px solid #181e24;
+    padding: 7rem 2rem;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.author-card {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    background: #0d1117;
+    border: 1px solid #1a1f26;
+    padding: 3rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.author-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(to bottom, #6ee7b7, transparent);
+}
+
+.author-avatar {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background: transparent;
+    border: 1px solid #6ee7b7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'DM Mono', monospace;
+    font-size: 1.1rem;
+    color: #6ee7b7;
+    letter-spacing: 0.1em;
+    flex-shrink: 0;
+}
+
+.author-name {
+    font-size: 1.9rem;
+    font-weight: 600;
+    font-style: italic;
+    color: #f5f0e8;
+    margin-bottom: 0.4rem;
+}
+
+.author-institution {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.75rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: #6ee7b7;
+    margin-bottom: 1.2rem;
+}
+
+.author-bio {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #7a7060;
+    max-width: 580px;
+}
+
+@media (max-width: 600px) {
+    .author-card { flex-direction: column; text-align: center; gap: 1.5rem; }
+    .author-card::before { width: 100%; height: 3px; top: 0; left: 0; }
+}
+
 </style>
 """, unsafe_allow_html=True)
 
@@ -503,7 +576,7 @@ html_content = f"""
 <section class="hero">
 <p class="eyebrow">⬡ AI-Powered · Graph Theory · Assistant ⬡</p>
 <h1 class="hero-title" text-align: center>
-<em>Graph</em><br><em>Theory</em><br><em>Assistant</em>
+Graph<br>Theory<br>Assistant
 </h1>
 <p class="hero-sub">
 An intelligent chatbot helping students through the world of graphs and the algorithms that connect them.
@@ -563,11 +636,28 @@ Upload a graph directly and let the assistant do the heavy lifting — identifyi
 
 <!-- ── TOPICS ── -->
 <div class="topics-section">
-<p class="section-label">Some of the Topics Covered</p> <p class="section-label">Some of the Topics Covered</p>
+<p class="section-label">Some of the Topics Covered</p>
 <div class="topics-list">
 {topics_html}
 </div>
 </div>
+
+<!-- ── AUTHOR ── -->
+  <div class="author-section">
+    <p class="section-label">Creator</p>
+    <div class="author-card">
+      <div class="author-avatar">SGR</div>
+      <div class="author-info">
+        <p class="author-name">Swati G Ramnani</p>
+        <p class="author-institution">St. Xavier's College, Ahmedabad</p>
+        <p class="author-bio">
+          Passionate about mathematics and intelligent systems, Swati built the 
+          Graph Theory Assistant to make one of computer science's most elegant 
+          disciplines accessible to every curious mind.
+        </p>
+      </div>
+    </div>
+  </div>
 
 <!-- ── CHAT CTA ── -->
 <div class="chat-section">
@@ -579,6 +669,7 @@ Launch the assistant and start your conversation. No sign-up required.
 Start Chatting <span class="cta-arrow">→</span>
 </a>
 </div>
+
 
 <!-- ── FOOTER ── -->
 <footer class="site-footer">
