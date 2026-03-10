@@ -4,8 +4,6 @@ Created on Tue Mar 10 09:20:17 2026
 
 @author: swati
 """
-
-@@ -0,0 +1,588 @@
 import streamlit as st
 
 # ── Page config ────────────────────────────────────────────────────────────────
