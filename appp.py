@@ -98,7 +98,7 @@ animation: fadeUp 0.8s ease forwards 0.2s;
 }
 
 .hero-title {
-font-size: clamp(3.5rem, 9vw, 8rem);
+font-size: clamp(9rem, 9vw, 8rem);
 font-weight: 300;
 line-height: 0.95;
 color: #f5f0e8;
@@ -698,6 +698,7 @@ Start Chatting <span class="cta-arrow">→</span>
 
 
 st.markdown(html_content, unsafe_allow_html=True)
+
 
 
 
