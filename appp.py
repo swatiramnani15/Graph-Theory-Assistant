@@ -484,6 +484,14 @@ animation: pulse-ring 2.5s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
     .author-card::before { width: 100%; height: 3px; top: 0; left: 0; }
 }
 
+.hero {
+    text-align: center;
+}
+
+.hero-title {
+    text-align: center;
+}
+
 </style>
 """, unsafe_allow_html=True)
 
@@ -677,5 +685,6 @@ Start Chatting <span class="cta-arrow">→</span>
 
 </div>
 """
+
 
 st.markdown(html_content, unsafe_allow_html=True)
