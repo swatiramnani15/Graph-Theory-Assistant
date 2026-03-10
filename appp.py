@@ -593,7 +593,7 @@ html_content = f"""
 <!-- ── HERO ── -->
 <section class="hero">
 <p class="eyebrow">⬡ AI-Powered · Graph Theory · Assistant ⬡</p>
-<h1 class="hero-title", font-size: 3rem>
+<h1 class="hero-title", font-size: 10rem>
   <em class="glow-word">Graph Theory Assistant</em>
 </h1>
 <p class="hero-sub">
@@ -698,6 +698,7 @@ Start Chatting <span class="cta-arrow">→</span>
 
 
 st.markdown(html_content, unsafe_allow_html=True)
+
 
 
 
