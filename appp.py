@@ -81,7 +81,7 @@ flex-direction: column;
 align-items: center;
 justify-content: center;
 min-height: 100vh;
-padding: 4rem 2rem 2rem;
+padding: 6rem 3rem 3rem;
 text-align: center;
 position: relative;
 }
@@ -98,9 +98,9 @@ animation: fadeUp 0.8s ease forwards 0.2s;
 }
 
 .hero-title {
-font-size: clamp(9rem, 9vw, 8rem);
+font-size: clamp(12rem, 9vw, 9rem);
 font-weight: 300;
-line-height: 1.3;
+line-height: 1.7;
 color: #f5f0e8;
 letter-spacing: -0.02em;
 opacity: 0;
@@ -698,6 +698,7 @@ Start Chatting <span class="cta-arrow">→</span>
 
 
 st.markdown(html_content, unsafe_allow_html=True)
+
 
 
 
