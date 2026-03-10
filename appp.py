@@ -484,12 +484,22 @@ animation: pulse-ring 2.5s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
     .author-card::before { width: 100%; height: 3px; top: 0; left: 0; }
 }
 
-.hero {
+.hero-title {
+    font-size: clamp(2.5rem, 6vw, 6rem);
+    font-weight: 300;
+    letter-spacing: -0.02em;
+    color: #f5f0e8;
     text-align: center;
+    line-height: 1.2;
+    opacity: 0;
+    animation: fadeUp 0.9s ease forwards 0.4s;
 }
 
-.hero-title {
-    text-align: center;
+.glow-word {
+    font-style: italic;
+    font-weight: 700;
+    color: #6ee7b7;
+    text-shadow: 0 0 40px #6ee7b760, 0 0 80px #6ee7b730;
 }
 
 </style>
@@ -583,8 +593,8 @@ html_content = f"""
 <!-- ── HERO ── -->
 <section class="hero">
 <p class="eyebrow">⬡ AI-Powered · Graph Theory · Assistant ⬡</p>
-<h1 class="hero-title" align="center">
-Graph<br>Theory<br>Assistant
+<h1 class="hero-title">
+  Graph <em class="glow-word">Theory</em> Assistant
 </h1>
 <p class="hero-sub">
 An intelligent chatbot helping students through the world of graphs and the algorithms that connect them.
@@ -688,3 +698,4 @@ Start Chatting <span class="cta-arrow">→</span>
 
 
 st.markdown(html_content, unsafe_allow_html=True)
+
