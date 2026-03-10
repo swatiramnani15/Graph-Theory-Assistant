@@ -575,7 +575,7 @@ html_content = f"""
 <!-- ── HERO ── -->
 <section class="hero">
 <p class="eyebrow">⬡ AI-Powered · Graph Theory · Assistant ⬡</p>
-<h1 class="hero-title" text-align="center">
+<h1 class="hero-title" className='text-center'>
 Graph<br>Theory<br>Assistant
 </h1>
 <p class="hero-sub">
