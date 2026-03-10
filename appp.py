@@ -593,8 +593,8 @@ html_content = f"""
 <!-- ── HERO ── -->
 <section class="hero">
 <p class="eyebrow">⬡ AI-Powered · Graph Theory · Assistant ⬡</p>
-<h1 class="hero-title">
-  Graph <em class="glow-word">Theory</em> Assistant
+<h1 class="hero-title", font-size: 1.5rem>
+  <em class="glow-word">Graph Theory Assistant</em>
 </h1>
 <p class="hero-sub">
 An intelligent chatbot helping students through the world of graphs and the algorithms that connect them.
@@ -698,4 +698,5 @@ Start Chatting <span class="cta-arrow">→</span>
 
 
 st.markdown(html_content, unsafe_allow_html=True)
+
 
